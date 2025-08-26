@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সহজ সরল সিম্পল</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Responsive Navbar -->
+    <nav class="bg-white shadow-md p-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+        <!-- Left: Logo & Website Name -->
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="Logo" class="h-10 w-10">
+            <h1 class="text-xl font-bold">সহজ সরল সিম্পল</h1>
+        </div>
+
+        <!-- Right: Heart, Coin, Copy Counters -->
+        <div class="flex items-center gap-4">
+            <!-- Heart Count -->
+            <div class="flex items-center gap-1 cursor-pointer" id="heart-wrapper">
+                <span id="heart-count" class="font-semibold">0</span>
+            </div>
+
+            <!-- Coin Count -->
+            <div class="flex items-center gap-1">
+                <span id="coin-count" class="font-semibold">100</span>
+            </div>
+
+            <!-- Copy Count -->
+            <div class="flex items-center gap-1 cursor-pointer" id="copy-wrapper">
+                <span id="copy-count" class="font-semibold">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
