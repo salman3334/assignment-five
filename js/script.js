@@ -1,22 +1,31 @@
-// Navbar counters
-let heartCount = 0;
-let coinCount = 100;
-let copyCount = 0;
+// Copy Number
+function copyNumber(number) {
+  navigator.clipboard.writeText(number);
+  alert("Copied: " + number);
+  addToHistory("Copied", number);
+}
 
-document.getElementById('heart-wrapper').addEventListener('click', () => {
-  heartCount++;
-  document.getElementById('heart-count').innerText = heartCount;
-});
+// Call Number
+function callNumber(number) {
+  alert("Calling: " + number);
+  addToHistory("Called", number);
+}
 
-document.getElementById('copy-wrapper').addEventListener('click', () => {
-  copyCount++;
-  document.getElementById('copy-count').innerText = copyCount;
-});
+// Add to History
+function addToHistory(action, number) {
+  const historyList = document.getElementById("history-list");
 
-// Hero section event handlers
-const serviceCards = document.querySelectorAll('.service-card');
-serviceCards.forEach(card => {
-  card.addEventListener('click', () => {
-    alert("You clicked: " + card.dataset.name);
-  });
-});
+  if (historyList.children[0]?.classList.contains("italic")) {
+    historyList.innerHTML = "";
+  }
+
+  const li = document.createElement("li");
+  li.textContent = `${action}: ${number}`;
+  historyList.prepend(li);
+}
+
+// Clear History
+function clearHistory() {
+  const historyList = document.getElementById("history-list");
+  historyList.innerHTML = '<li class="text-gray-400 italic">No history yet...</li>';
+}
