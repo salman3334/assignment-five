@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>সহজ সরল সিম্পল</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QAssignment five</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
 
-    <!-- Responsive Navbar -->
-    <nav class="bg-white shadow-md p-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-        <!-- Left: Logo & Website Name -->
-        <div class="flex items-center gap-2">
-            <img src="assets/logo.png" alt="Logo" class="h-10 w-10">
-            <h1 class="text-xl font-bold">সহজ সরল সিম্পল</h1>
-        </div>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md p-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+    <div class="flex items-center gap-2">
+      <img src="assets/logo.png" alt="Logo" class="h-10 w-10">
+      <h1 class="text-xl font-bold">Emergency Service</h1>
+    </div>
 
-        <!-- Right: Heart, Coin, Copy Counters -->
-        <div class="flex items-center gap-4">
-            <!-- Heart Count -->
-            <div class="flex items-center gap-1 cursor-pointer" id="heart-wrapper">
-                <span id="heart-count" class="font-semibold">0</span>
-            </div>
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-1 cursor-pointer" id="heart-wrapper">
+        <img src="assets/heart.png" class="h-6 w-6">
+        <span id="heart-count" class="font-semibold">0</span>
+      </div>
 
-            <!-- Coin Count -->
-            <div class="flex items-center gap-1">
-                <span id="coin-count" class="font-semibold">100</span>
-            </div>
+      <div class="flex items-center gap-1">
+        <img src="assets/coin.png" class="h-6 w-6">
+        <span id="coin-count" class="font-semibold">100</span>
+      </div>
 
-            <!-- Copy Count -->
-            <div class="flex items-center gap-1 cursor-pointer" id="copy-wrapper">
-                <span id="copy-count" class="font-semibold">0</span>
-            </div>
-        </div>
-    </nav>
+      <div class="flex items-center gap-1 cursor-pointer" id="copy-wrapper">
+        <img src="assets/logo-dark.png" class="h-6 w-6">
+        <span id="copy-count" class="font-semibold">0</span>
+      </div>
+    </div>
+  </nav>
+   <!-- Hero Section -->
+<section class="bg-green-800 text-white py-12">
+  <div class="container mx-auto flex flex-col items-center text-center">
+    <!-- Logo -->
+    <img src="assets/logo-dark.png" alt="Bangladesh Govt Logo" class="h-20 w-20 mb-4">
 
-    <script src="script.js"></script>
+    <!-- Title -->
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
+      Emergency Service Directory
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-sm sm:text-base md:text-lg max-w-2xl">
+      Government Emergency Services at Your Fingertips – A Project by Government of the People's Republic of Bangladesh
+    </p>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
-
