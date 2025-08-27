@@ -52,3 +52,6 @@ const heartBtns = document.querySelectorAll(".heart");
     clearHistory.addEventListener("click", () => {
       historyList.innerHTML = "";
     });
+
+
+
